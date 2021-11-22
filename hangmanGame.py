@@ -90,22 +90,18 @@ def getWord():
 
 def chooseWord():
 
-    wordUrl = 'http://svnweb.freebsd.org/csrg/share/dict/words?view=co&content-type=text/plain'
-    response = urllib.request.urlopen(wordUrl)
-    longTxt = response.read().decode()
-    words = longTxt.splitlines()
+    #wordUrl = 'http://svnweb.freebsd.org/csrg/share/dict/words?view=co&content-type=text/plain'
+    #response = urllib.request.urlopen(wordUrl)
+    #longTxt = response.read().decode()
+    #words = longTxt.splitlines()
 
-    word = str(words[random.randint(0, len(words))]).upper()
+    #word = str(words[random.randint(0, len(words))]).upper()
 
-    ###words = ['PIZZAZ', 'JACUZZI', 'JUKEBOX', 'DRIZZLY', 'ZIGZAGS']
-    ###word = words[(random.randint(0, 4))]
-    ####words = open("guessableWords.txt").readlines()
-    ###word = words[0]
-    ####while not word.isalpha():
-    ###    word = random.choice(words)
+    words = ['PIZZAZ', 'JACUZZI', 'JUKEBOX', 'DRIZZLY', 'ZIGZAGS']
+    word = words[(random.randint(0, 4))]
 
-    ###wordList = list(word)
-    ###wordList.pop()
+    wordList = list(word)
+    wordList.pop()
     return word
 
 #makeBlanks
